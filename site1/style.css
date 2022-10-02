@@ -1,23 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 *{
+
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 	list-style-type: none;
 	text-decoration: none;
 	outline: none;
-	color: white;
 }
 
 header{
 	height: 100vh;
-	background: url('img/headerBckground.png') no-repeat center/cover	;
+	background: url('img/headerBckground.png') no-repeat center/cover;
 	
 }
+#pex{
+	color: red;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+.temp{
+font-size: 12px;
+}
 
-@media only screen and (min-width: 768px) {
+.list{
+	font-size: 14px;
+    padding: 15px;
+}
+.white{
+	color: white;
+}
+.br-radius{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.pd-3{
+	padding: 6px;
+}
+
+.pd{
+	padding: 2px;
+}
+
+.br_none{
+	border: none;
+}
+.float{
+	float: left;
+}
+
+.br_right{
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+
+@media only screen and (min-width: 910px) {
 
 	nav{
 		display: flex;
-		justify-content: space-around;
+	justify-content: space-around;
 	}
 	.d-flex{
 		display: flex;
@@ -26,5 +69,13 @@ header{
 		padding: 25px 0;
 		box-sizing: border-box;
 	}
-
+	.pd-5{
+		padding: 0 5px;
+	}
+	.temp{
+		padding: 15px 5px;
+	}
+.d-flex>li{
+	padding: 0 30px 0 0;
+}
 }
