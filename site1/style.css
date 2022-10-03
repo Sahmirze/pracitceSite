@@ -13,6 +13,9 @@ header{
 	background: url('img/headerBckground.png') no-repeat center/cover;
 	
 }
+nav{
+	position: relative;
+}
 #pex{
 	color: red;
     font-size: 30px;
@@ -55,12 +58,36 @@ font-size: 12px;
 	border-bottom-right-radius: 15px;
 }
 
+.d-flex> li:hover {
+border-bottom: 2px solid white;
+}	
+ul{
+	width: 10%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+}
 
+.line{
+	text-align: end;
+	position: absolute;
+	right: 0;
+	top: 7%;
+}
+.logo{
+	display: flex;
+}
+
+.logo p:nth-child(2){
+	padding: 15px 5px;
+
+}
 @media only screen and (min-width: 910px) {
 
 	nav{
 		display: flex;
-	justify-content: space-around;
+		justify-content: space-around;
+		position: inherit;
 	}
 	.d-flex{
 		display: flex;
@@ -75,7 +102,12 @@ font-size: 12px;
 	.temp{
 		padding: 15px 5px;
 	}
-.d-flex>li{
-	padding: 0 30px 0 0;
-}
+	.d-flex>li{
+		margin: 0 30px 0 0;
+	}
+	.bMenu{
+		display: none;
+	}
+
+
 }
