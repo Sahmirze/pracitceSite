@@ -39,7 +39,7 @@ font-size: 12px;
 }
 
 .pd-3{
-	padding: 6px;
+	padding: 3px;
 }
 
 .pd{
@@ -60,6 +60,7 @@ font-size: 12px;
 
 .d-flex> li:hover {
 border-bottom: 2px solid white;
+cursor: pointer;
 }	
 ul{
 	width: 10%;
@@ -82,6 +83,41 @@ ul{
 	padding: 15px 5px;
 
 }
+.fs-14{
+	font-size: 14px;
+}
+
+.headMenu{
+	background: transparent;
+	border: none;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+
+.none{
+	display: none;
+}
+
+
+.bar{
+	
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.psAbsolute{
+	position:absolute;
+}
+
+
+
 @media only screen and (min-width: 910px) {
 
 	nav{
@@ -109,5 +145,30 @@ ul{
 		display: none;
 	}
 
+	ul{
+		width: inherit;
+	}
 
+	.pd-3{
+		padding: 3px;
+	}
+	.fs-14{
+		font-size: inherit;
+	}
+	.pd-3{
+		padding: 6px;
+	}
+	.none{
+		display: inherit;
+	}
+	.bar{
+		width: inherit;
+		height: inherit;
+		position: inherit;
+		margin: inherit;
+		box-sizing: inherit;
+	}
+	.psAbsolute{
+		position: inherit;
+	}
 }

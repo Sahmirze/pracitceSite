@@ -11,28 +11,33 @@
 	<header>
 		<nav>
 			<div class="line">
-				<button class="bMenu">ok</button>
+				<button class="bMenu pd-3 headMenu"></button>
+				<button class="bMenu pd-3 headMenu" onclick="on()"><i class="fa-solid fa-bars"></i></button>
 			</div>
 			<div class="logo  pd-25">
 				<p id="pex">pex</p>
 				<p class="pd-5 temp white">Photoshop Website Template</p>
 			</div>
 			<div class="menu d-flex pd-25">
-				<div class="list white">
+				<div class="list white none psAbsolute bar" id="list" onclick="off()">
 					<ul class="d-flex">
 						<li>About</li>
 						<li>How It Works</li>
 						<li>Services</li>
 						<li>FAQ</li>
-						<li>Contact	</li>
+						<li>Contact</li>
 					</ul>
 				</div>
-				<div class="search pd-3">
-					<input type="text" name="" id="" placeholder="Search Website" class="pd-3 br-radius br_none float ">
+				<div class="search pd-3 psAbsolute">
+					<div>
+						<input type="text" name="" id="" placeholder="Search Website" class="pd-3 br-radius br_none float ">
 					<button class="pd-3 br_none br_right"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+					</div>
+					
 				</div>
 			</div>
 		</nav>
 	</header>
+	<script src="head.js"></script>
 </body>
 </html>
